@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "f094649e-e141-4065-9aef-9a9ea2901135",
+		"name": "userSign_heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5793298"
+	},
+	"item": [
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM4MzAxMjMsImV4cCI6MTY1NDI2MjEyM30.6TWPphNdKm9lLQwHxDKTt62zDipjxJyEFjqGbACkZyA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"wow\",\r\n    \"passward\":\"22334444\",\r\n    \"confirmPassward\":\"22334444\",\r\n    \"email\":\"cccc@gmail.com\",\r\n    \"sex\":\"Female\",\r\n    \"photo\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/users/sign_up",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signIn",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRlNjAyNWY5OWZmMWVmZGJmYjljNiIsImlhdCI6MTY1MzkyNTM3OCwiZXhwIjoxNjU0MzU3Mzc4fQ.j-64dDXMlWzHHZjnzHBaZDUCHGGV5dPBqq4gPAJsGmI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"1044@gmail.com\",\r\n    \"passward\":\"22334444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/users/sign_in",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTM3Y2FlMDE5ZmY4NjNjNjgwOTkyMSIsImlhdCI6MTY1MzgzMzk0OCwiZXhwIjoxNjU0MjY1OTQ4fQ.ZjbqAQ6UvDSgX-UMSPYfh15raTmFYjUNco6C9nPK5WE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updata_passward",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTM3Y2FlMDE5ZmY4NjNjNjgwOTkyMSIsImlhdCI6MTY1MzgzMzk0OCwiZXhwIjoxNjU0MjY1OTQ4fQ.ZjbqAQ6UvDSgX-UMSPYfh15raTmFYjUNco6C9nPK5WE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passward\":\"223344445\",\r\n    \"confirmPassward\": \"223344445\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/users/updata_passward",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"updata_passward"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRlZGVmYzc2MjE3NWU1OGNmMjU1NSIsImlhdCI6MTY1MzkyNzU4NywiZXhwIjoxNjU0MzU5NTg3fQ.2BiV3cYbFA68TZb_UsRSonbslpMW4SJGIyjoyCL9q24",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"河童\",\r\n    \r\n    \"photo\":\"\",\r\n    \"sex\":\"Female\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postsGet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRjZjlmNzlkZThkNWMyZWYyMzVkZSIsImlhdCI6MTY1MzkxOTY0NywiZXhwIjoxNjU0MzUxNjQ3fQ.X-iM5nv87H7W_1th3D-1ntr1vCCySHwyy4fUM6vT5KU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postsPost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRmMTQ0N2Q3YTk4NmNiNzQ4NzFiZCIsImlhdCI6MTY1MzkyODI4OCwiZXhwIjoxNjU0MzYwMjg4fQ.ryvrtK5Pk5YcZZz2BvBALtKn1OpD_RGn9FBWUK53dXY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\":\"\",\r\n    \"content\":\"雨好大不想出門\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postsPatch",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRjZjlmNzlkZThkNWMyZWYyMzVkZSIsImlhdCI6MTY1MzkxOTY0NywiZXhwIjoxNjU0MzUxNjQ3fQ.X-iM5nv87H7W_1th3D-1ntr1vCCySHwyy4fUM6vT5KU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"image\":\"\",\r\n    \"content\":\"打我啊，胖子\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/posts/6294e12e5bf839f4811de2cc",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6294e12e5bf839f4811de2cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postsDeleteone",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRjZjlmNzlkZThkNWMyZWYyMzVkZSIsImlhdCI6MTY1MzkxOTY0NywiZXhwIjoxNjU0MzUxNjQ3fQ.X-iM5nv87H7W_1th3D-1ntr1vCCySHwyy4fUM6vT5KU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/posts/6294f26d7d7a986cb74871ed",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6294f26d7d7a986cb74871ed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postsDeleteAll",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTRjZjlmNzlkZThkNWMyZWYyMzVkZSIsImlhdCI6MTY1MzkxOTY0NywiZXhwIjoxNjU0MzUxNjQ3fQ.X-iM5nv87H7W_1th3D-1ntr1vCCySHwyy4fUM6vT5KU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://salty-scrubland-32911.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"salty-scrubland-32911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
